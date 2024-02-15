@@ -1,0 +1,35 @@
+/* Existing styles remain unchanged */
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+.expand-btn {
+    display: block;
+    width: 100%;
+    background: #ddd;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Other styles remain unchanged */
+
+.sub-links {
+    display: block; /* Changed from 'none' to 'block' */
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 20px;
+    transition: max-height 0.6s ease-in-out; /* Smooth transition for max-height */
+}
+
+.sub-links.expanded {
+    max-height: 500px; /* Adjust as needed based on the content size */
+}
+
+
+.sub-links a {
+    display: block;
+    margin-bottom: 10px;
+}
